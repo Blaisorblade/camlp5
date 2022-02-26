@@ -31,8 +31,8 @@ depends: [
   "ocamlfind"
   "camlp-streams" { >= "5.0" }
   "conf-perl"
-  "conf-perl-ipc-system-simple"
-  "conf-perl-string-shellquote"
+  "conf-perl-ipc-system-simple" { with-test | os-family != "homebrew" }
+  "conf-perl-string-shellquote" { with-test | os-family != "homebrew" }
   "conf-diffutils" { with-test & os-distribution = "alpine" }
   "pcre" { with-test }
   "ounit" { with-test }
